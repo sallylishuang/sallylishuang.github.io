@@ -5,7 +5,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            max-width: 950px;
+            max-width: 1100px;
             margin: 40px auto;
             padding: 0 25px;
             line-height: 1.6;
@@ -22,7 +22,7 @@
         }
 
         .header img {
-            width: 160px;
+            width: 140px;
             border-radius: 8px;
         }
 
@@ -35,6 +35,11 @@
             border-bottom: 1px solid #ddd;
             padding-bottom: 5px;
             color: #003366;
+        }
+
+        h3 {
+            color: #003366;
+            margin-top: 0;
         }
 
         a {
@@ -53,6 +58,35 @@
 
         ul {
             margin-top: 8px;
+        }
+
+        .project {
+            display: flex;
+            align-items: flex-start;
+            gap: 25px;
+            margin-bottom: 40px;
+            padding-bottom: 25px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .project img {
+            width: 320px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .project-content {
+            flex: 1;
+        }
+
+        .project-content p {
+            text-align: justify;
+        }
+
+        .project-gallery img {
+            width: 250px;
+            margin-right: 10px;
+            margin-top: 10px;
         }
 
         .publication {
@@ -78,7 +112,7 @@
         <p class="links">
             <a href="CV_shuang.pdf" target="_blank">CV</a>
             <a href="https://www.linkedin.com/in/shuang-li-892384352" target="_blank">LinkedIn</a>
-            <a href="https://www.linkedin.com/in/shuang-li-892384352" target="_blank">Google Scholar</a>
+            <a href="#" target="_blank">Google Scholar</a>
         </p>
     </div>
 </div>
@@ -94,24 +128,68 @@
 </ul>
 
 <h2>Research Projects</h2>
-<ul>
-    <li>Energy-Efficent Transmission Design for WBANs with
-Hybrid Supervised/Reinforcement Learning: Energy-efficient and reliable communication remains a fundamental challenge in WBANs due to stringent energy constraints, dynamic channel conditions, and finite blocklength transmission requirements. 
-We develop a hybrid supervised and deep reinforcement learning framework that jointly optimizes transmission decisions, power allocation, and blocklength configuration, enabling near-optimal energy-efficient communication while satisfying reliability constraints. <img src="WBAN.png" width="500"></li>
-     <li>Smart Scheduling for Freshness-Sensitive IoT Networks with Transfer Learning: Wireless-powered IoT networks require intelligent scheduling strategies to maintain information freshness under energy constraints. 
-         I developed a deep transfer learning-based framework that jointly optimizes transmission mode selection (NOMA/OMA) and sensor scheduling, enabling adaptive AoI minimization and efficient online operation in dynamic wireless environments. <img src="iot.png" width="500"> <img src="TL.png" width="500"></li>
-        <li>Multi-Objective Optimization and Preference-Aware Learning: Existing WBAN transmission schemes often optimize either energy efficiency or information freshness, overlooking their inherent trade-off. 
-            We develop PG-MOPDQN, a preference-guided multi-objective reinforcement learning framework that jointly optimizes sensor scheduling and power control, enabling flexible Pareto-optimal operation under diverse user requirements. <img src="MOO.png" width="500"></li>
-    <li>ISAC for Intelligent Healthcare Applications: By leveraging real-world 5G communication signals and wireless channel measurements, such as Channel State Information (CSI), my research aims to develop ISAC systems for intelligent healthcare applications. 
-        By combining Transformer-based learning architectures with wireless sensing data, I seek to construct Digital Twins of indoor environments that capture human activities, mobility patterns, and physiological behaviors in real time.<img src="isac.png" width="500"> </li>
-</ul>
+
+<div class="project">
+    <img src="WBAN.png" alt="WBAN">
+
+    <div class="project-content">
+        <h3>Energy-Efficient Transmission Design for WBANs with Hybrid Supervised/Reinforcement Learning</h3>
+
+        <p>
+            Energy-efficient and reliable communication remains a fundamental challenge in Wireless Body Area Networks (WBANs) due to stringent energy constraints, dynamic channel conditions, and finite blocklength transmission requirements. We developed a hybrid supervised and deep reinforcement learning framework that jointly optimizes transmission decisions, power allocation, and blocklength configuration, enabling near-optimal energy-efficient communication while satisfying reliability constraints.
+        </p>
+    </div>
+</div>
+
+<div class="project">
+    <img src="iot.png" alt="IoT">
+
+    <div class="project-content">
+        <h3>Smart Scheduling for Freshness-Sensitive IoT Networks with Transfer Learning</h3>
+
+        <p>
+            Wireless-powered IoT networks require intelligent scheduling strategies to maintain information freshness under energy constraints. We developed a deep transfer learning framework that jointly optimizes transmission mode selection (OMA/NOMA) and sensor scheduling, enabling adaptive Age of Information (AoI) minimization and efficient online operation in dynamic wireless environments.
+        </p>
+
+        <div class="project-gallery">
+            <img src="TL.png" alt="Transfer Learning">
+        </div>
+    </div>
+</div>
+
+<div class="project">
+    <img src="MOO.png" alt="Multi-Objective Optimization">
+
+    <div class="project-content">
+        <h3>Multi-Objective Optimization and Preference-Aware Learning</h3>
+
+        <p>
+            Existing WBAN transmission schemes often optimize either energy efficiency or information freshness, overlooking their inherent tradeoff. We developed PG-MOPDQN, a preference-guided multi-objective reinforcement learning framework that jointly optimizes sensor scheduling and power control, enabling flexible Pareto-optimal operation under diverse user requirements.
+        </p>
+    </div>
+</div>
+
+<div class="project">
+    <img src="isac.png" alt="ISAC">
+
+    <div class="project-content">
+        <h3>ISAC for Intelligent Healthcare Applications</h3>
+
+        <p>
+            By leveraging real-world 5G communication signals and wireless channel measurements such as Channel State Information (CSI), my current research focuses on communication-embedded sensing for intelligent healthcare applications. By combining Transformer-based learning architectures with wireless sensing data, I aim to build digital twins of indoor environments that capture human activities, mobility patterns, and physiological behaviors in real time. The long-term vision is to establish AI-native wireless systems that seamlessly integrate communication, sensing, digital twins, and intelligent inference for future smart healthcare environments.
+        </p>
+    </div>
+</div>
 
 <h2>Teaching Experience</h2>
 <ul>
-    <li><b>Instructor</b>, University of Victoria, Fall 2025 – Present<br>
+    <li>
+        <b>Instructor</b>, University of Victoria, Fall 2025 – Present<br>
         ECE 403/503: Optimization for Machine Learning
     </li>
-    <li><b>Teaching Assistant</b>, University of Victoria, Spring 2022 – Fall 2024<br>
+
+    <li>
+        <b>Teaching Assistant</b>, University of Victoria, Spring 2022 – Fall 2024<br>
         ECE 403/503: Optimization for Machine Learning; ECE 496A/519A: 5G Wireless and IoT; ECE 310: Digital Signal Processing I
     </li>
 </ul>
