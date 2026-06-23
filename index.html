@@ -22,8 +22,11 @@
         }
 
         .header img {
-            width: 140px;
-            border-radius: 8px;
+            width: 130px;
+            height: 130px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 3px solid #ddd;
         }
 
         h1 {
@@ -69,8 +72,20 @@
             border-bottom: 1px solid #eee;
         }
 
-        .project img {
+        .project > img {
             width: 320px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .project-images {
+            width: 340px;
+            flex-shrink: 0;
+        }
+
+        .project-images img {
+            width: 100%;
+            margin-bottom: 12px;
             border-radius: 8px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.1);
         }
@@ -81,12 +96,6 @@
 
         .project-content p {
             text-align: justify;
-        }
-
-        .project-gallery img {
-            width: 250px;
-            margin-right: 10px;
-            margin-top: 10px;
         }
 
         .publication {
@@ -112,7 +121,7 @@
         <p class="links">
             <a href="CV_shuang.pdf" target="_blank">CV</a>
             <a href="https://www.linkedin.com/in/shuang-li-892384352" target="_blank">LinkedIn</a>
-            <a href="#" target="_blank">Google Scholar</a>
+            <a href="https://scholar.google.com/citations?hl=en&user=HSx2KnAAAAAJ" target="_blank">Google Scholar</a>
         </p>
     </div>
 </div>
@@ -142,7 +151,10 @@
 </div>
 
 <div class="project">
-    <img src="iot.png" alt="IoT">
+    <div class="project-images">
+        <img src="iot.png" alt="IoT">
+        <img src="TL.png" alt="Transfer Learning">
+    </div>
 
     <div class="project-content">
         <h3>Smart Scheduling for Freshness-Sensitive IoT Networks with Transfer Learning</h3>
@@ -150,10 +162,6 @@
         <p>
             Wireless-powered IoT networks require intelligent scheduling strategies to maintain information freshness under energy constraints. We developed a deep transfer learning framework that jointly optimizes transmission mode selection (OMA/NOMA) and sensor scheduling, enabling adaptive Age of Information (AoI) minimization and efficient online operation in dynamic wireless environments.
         </p>
-
-        <div class="project-gallery">
-            <img src="TL.png" alt="Transfer Learning">
-        </div>
     </div>
 </div>
 
