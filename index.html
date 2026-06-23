@@ -1,14 +1,17 @@
+```html
 <!DOCTYPE html>
 <html>
 <head>
     <title>Shuang Li</title>
+
     <style>
+
         body {
             font-family: Arial, sans-serif;
             max-width: 1100px;
             margin: 40px auto;
             padding: 0 25px;
-            line-height: 1.6;
+            line-height: 1.7;
             color: #222;
         }
 
@@ -31,6 +34,7 @@
 
         h1 {
             margin-bottom: 5px;
+            color: #003366;
         }
 
         h2 {
@@ -72,22 +76,11 @@
             border-bottom: 1px solid #eee;
         }
 
-        .project > img {
+        .project img {
             width: 320px;
             border-radius: 8px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        }
-
-        .project-images {
-            width: 340px;
             flex-shrink: 0;
-        }
-
-        .project-images img {
-            width: 100%;
-            margin-bottom: 12px;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
         }
 
         .project-content {
@@ -99,133 +92,286 @@
         }
 
         .publication {
-            margin-bottom: 12px;
+            margin-bottom: 15px;
             text-align: justify;
         }
+
+        .contact a {
+            font-weight: normal;
+        }
+
     </style>
+
 </head>
 
 <body>
 
 <div class="header">
+
     <img src="Photo.jpg" alt="Shuang Li">
 
     <div>
+
         <h1>Shuang Li</h1>
+
         <p>
             Postdoctoral Research Associate, Ph.D.<br>
             Department of Electrical and Computer Engineering<br>
-            University of Victoria, Victoria, BC, Canada<br>
-            Email:shuangli20@uvic.ca  Personal Email: sally.lishuang@gmail.com
+            University of Victoria, Victoria, BC, Canada
         </p>
 
+        <div class="contact">
+
+            <b>Email:</b>
+            <a href="mailto:shuangli20@uvic.ca">
+                shuangli20@uvic.ca
+            </a>
+            <br>
+
+            <b>Personal Email:</b>
+            <a href="mailto:sally.lishuang@gmail.com">
+                sally.lishuang@gmail.com
+            </a>
+
+        </div>
+
+        <br>
+
         <p class="links">
-            <a href="CV_shuang.pdf" target="_blank">CV</a>
-            <a href="https://www.linkedin.com/in/shuang-li-892384352" target="_blank">LinkedIn</a>
-            <a href="https://scholar.google.com/citations?hl=en&user=HSx2KnAAAAAJ" target="_blank">Google Scholar</a>
+
+            <a href="CV_shuang.pdf" target="_blank">
+                CV
+            </a>
+
+            <a href="https://www.linkedin.com/in/shuang-li-892384352"
+               target="_blank">
+                LinkedIn
+            </a>
+
+            <a href="https://scholar.google.com/citations?hl=en&user=HSx2KnAAAAAJ"
+               target="_blank">
+                Google Scholar
+            </a>
+
         </p>
+
     </div>
+
 </div>
 
 <h2>Research Interests</h2>
+
 <ul>
     <li>Wireless Communications and Green Communications</li>
+
     <li>Wireless Body Area Networks (WBANs) and Internet of Things (IoT)</li>
+
     <li>Age of Information (AoI) and Data-Driven Decision-Making</li>
+
     <li>Multi-Objective Optimization (MOO) and Control</li>
+
     <li>Integrated Sensing and Communication (ISAC)</li>
+
     <li>Applied Machine Learning and Deep Reinforcement Learning</li>
 </ul>
+
 
 <h2>Research Projects</h2>
 
 <div class="project">
+
     <img src="WBAN.png" alt="WBAN">
-    <div class="project-content">
-        <h3>Energy-Efficient Transmission Design for WBANs with Hybrid Supervised/Reinforcement Learning</h3>
-
-        <p>
-            Energy-efficient and reliable communication remains a fundamental challenge in Wireless Body Area Networks (WBANs) due to stringent energy constraints, dynamic channel conditions, and finite blocklength transmission requirements. We developed a hybrid supervised and deep reinforcement learning framework that jointly optimizes transmission decisions, power allocation, and blocklength configuration, enabling near-optimal energy-efficient communication while satisfying reliability constraints.
-        </p>
-    </div>
-</div>
-
-<div class="project">
-    <div class="project-images">
-   <img src="TL.png" alt="Transfer Learning">
-    </div>
 
     <div class="project-content">
-        <h3>Smart Scheduling for Freshness-Sensitive IoT Networks with Transfer Learning</h3>
+
+        <h3>
+            Energy-Efficient Transmission Design for WBANs with Hybrid
+            Supervised/Reinforcement Learning
+        </h3>
 
         <p>
-            Wireless-powered IoT networks require intelligent scheduling strategies to maintain information freshness under energy constraints. We developed a deep transfer learning framework that jointly optimizes transmission mode selection (OMA/NOMA) and sensor scheduling, enabling adaptive Age of Information (AoI) minimization and efficient online operation in dynamic wireless environments.
+            Energy-efficient and reliable communication remains a
+            fundamental challenge in Wireless Body Area Networks (WBANs)
+            due to stringent energy constraints, dynamic channel
+            conditions, and finite blocklength transmission requirements.
+            We developed a hybrid supervised and deep reinforcement
+            learning framework that jointly optimizes transmission
+            decisions, power allocation, and blocklength configuration,
+            enabling near-optimal energy-efficient communication while
+            satisfying reliability constraints.
         </p>
+
     </div>
+
 </div>
 
+
 <div class="project">
-    <img src="MOO.png" alt="Multi-Objective Optimization">
+
+    <img src="TL.png" alt="Transfer Learning">
 
     <div class="project-content">
-        <h3>Multi-Objective Optimization and Preference-Aware Learning</h3>
+
+        <h3>
+            Smart Scheduling for Freshness-Sensitive IoT Networks with
+            Transfer Learning
+        </h3>
 
         <p>
-            Existing WBAN transmission schemes often optimize either energy efficiency or information freshness, overlooking their inherent tradeoff. We developed PG-MOPDQN, a preference-guided multi-objective reinforcement learning framework that jointly optimizes sensor scheduling and power control, enabling flexible Pareto-optimal operation under diverse user requirements.
+            Wireless-powered IoT networks require intelligent scheduling
+            strategies to maintain information freshness under energy
+            constraints. We developed a deep transfer learning framework
+            that jointly optimizes transmission mode selection (OMA/NOMA)
+            and sensor scheduling, enabling adaptive Age of Information
+            (AoI) minimization and efficient online operation in dynamic
+            wireless environments.
         </p>
+
     </div>
+
 </div>
 
+
 <div class="project">
+
+    <img src="MOO.png" alt="MOO">
+
+    <div class="project-content">
+
+        <h3>
+            Multi-Objective Optimization and Preference-Aware Learning
+        </h3>
+
+        <p>
+            Existing WBAN transmission schemes often optimize either
+            energy efficiency or information freshness, overlooking
+            their inherent tradeoff. We developed PG-MOPDQN, a
+            preference-guided multi-objective reinforcement learning
+            framework that jointly optimizes sensor scheduling and
+            power control, enabling flexible Pareto-optimal operation
+            under diverse user requirements.
+        </p>
+
+    </div>
+
+</div>
+
+
+<div class="project">
+
     <img src="isac.png" alt="ISAC">
 
     <div class="project-content">
-        <h3>ISAC for Intelligent Healthcare Applications</h3>
+
+        <h3>
+            ISAC for Intelligent Healthcare Applications
+        </h3>
 
         <p>
-            By leveraging real-world 5G communication signals and wireless channel measurements such as Channel State Information (CSI), my current research focuses on communication-embedded sensing for intelligent healthcare applications. By combining Transformer-based learning architectures with wireless sensing data, I aim to build digital twins of indoor environments that capture human activities, mobility patterns, and physiological behaviors in real time. The long-term vision is to establish AI-native wireless systems that seamlessly integrate communication, sensing, digital twins, and intelligent inference for future smart healthcare environments.
+            By leveraging real-world 5G communication signals and
+            wireless channel measurements such as Channel State
+            Information (CSI), my current research focuses on
+            communication-embedded sensing for intelligent healthcare
+            applications. By combining Transformer-based learning
+            architectures with wireless sensing data, I aim to build
+            digital twins of indoor environments that capture human
+            activities, mobility patterns, and physiological behaviors
+            in real time. The long-term vision is to establish
+            AI-native wireless systems that seamlessly integrate
+            communication, sensing, digital twins, and intelligent
+            inference for future smart healthcare environments.
         </p>
+
     </div>
+
 </div>
 
+
 <h2>Teaching Experience</h2>
+
 <ul>
+
     <li>
-        <b>Instructor</b>, University of Victoria, Fall 2025 – Present<br>
+        <b>Instructor</b>,
+        University of Victoria,
+        Fall 2025 – Present
+        <br>
         ECE 403/503: Optimization for Machine Learning
     </li>
 
     <li>
-        <b>Teaching Assistant</b>, University of Victoria, Spring 2022 – Fall 2024<br>
-        ECE 403/503: Optimization for Machine Learning; ECE 496A/519A: 5G Wireless and IoT; ECE 310: Digital Signal Processing I
+        <b>Teaching Assistant</b>,
+        University of Victoria,
+        Spring 2022 – Fall 2024
+        <br>
+        ECE 403/503: Optimization for Machine Learning
+        <br>
+        ECE 496A/519A: 5G Wireless and IoT
+        <br>
+        ECE 310: Digital Signal Processing I
     </li>
+
 </ul>
+
 
 <h2>Selected Publications</h2>
 
 <p class="publication">
-[1] S. Li, H. Yu, and H.-C. Yang, “Session-Specific Design for Wireless Transmission over WBANs: Navigating Energy Efficiency and Reliability Tradeoff with Multi-Objective Reinforcement Learning,” <i>IEEE Internet of Things Journal</i>, vol. 13, no. 10, pp. 20913–20924, May 2026.
+[1] S. Li, H. Yu, and H.-C. Yang,
+“Session-Specific Design for Wireless Transmission over WBANs:
+Navigating Energy Efficiency and Reliability Tradeoff with
+Multi-Objective Reinforcement Learning,”
+<i>IEEE Internet of Things Journal</i>,
+vol. 13, no. 10, pp. 20913–20924, May 2026.
 </p>
 
 <p class="publication">
-[2] S. Li, H. Hu, H.-C. Yang, K. Xiong, P. Fan, and K. B. Letaief, “AoI Minimization for WP-IoT with PDQN-Based Hybrid Offline/Online Learning: A Joint Scheduling and Transmission Design Approach,” <i>IEEE Transactions on Cognitive Communications and Networking</i>, vol. 12, pp. 4547–4560, Jan. 2026.
+[2] S. Li, H. Hu, H.-C. Yang, K. Xiong,
+P. Fan, and K. B. Letaief,
+“AoI Minimization for WP-IoT with PDQN-Based Hybrid
+Offline/Online Learning: A Joint Scheduling and Transmission
+Design Approach,”
+<i>IEEE Transactions on Cognitive Communications and Networking</i>,
+vol. 12, pp. 4547–4560, Jan. 2026.
 </p>
 
 <p class="publication">
-[3] S. Li, H.-C. Yang, and F. Hu, “Joint Transmission Mode Selection and Scheduling for AoI Minimization in NOMA-Capable WP-IoT Networks: A Deep Transfer Learning Solution,” <i>IEEE Transactions on Communications</i>, vol. 73, no. 8, pp. 5805–5816, Aug. 2025.
+[3] S. Li, H.-C. Yang, and F. Hu,
+“Joint Transmission Mode Selection and Scheduling for AoI
+Minimization in NOMA-Capable WP-IoT Networks:
+A Deep Transfer Learning Solution,”
+<i>IEEE Transactions on Communications</i>,
+vol. 73, no. 8, pp. 5805–5816, Aug. 2025.
 </p>
 
 <p class="publication">
-[4] S. Li, H.-C. Yang, F. Xu, H. Hu, and F. Hu, “Energy-Efficient Relay Transmission for WBAN: Energy Consumption Minimizing Design with Hybrid Supervised/Reinforcement Learning,” <i>IEEE Internet of Things Journal</i>, vol. 11, no. 10, pp. 17770–17779, May 2024.
+[4] S. Li, H.-C. Yang, F. Xu,
+H. Hu, and F. Hu,
+“Energy-Efficient Relay Transmission for WBAN:
+Energy Consumption Minimizing Design with Hybrid
+Supervised/Reinforcement Learning,”
+<i>IEEE Internet of Things Journal</i>,
+vol. 11, no. 10, pp. 17770–17779, May 2024.
 </p>
 
 <p class="publication">
-[5] S. Li, F. Hu, Z. Xu, Z. Mao, Z. Ling, and H. Liu, “Joint Power Allocation in Classified WBANs With Wireless Information and Power Transfer,” <i>IEEE Internet of Things Journal</i>, vol. 8, no. 2, pp. 989–1000, Jan. 2021.
+[5] S. Li, F. Hu, Z. Xu, Z. Mao,
+Z. Ling, and H. Liu,
+“Joint Power Allocation in Classified WBANs With Wireless
+Information and Power Transfer,”
+<i>IEEE Internet of Things Journal</i>,
+vol. 8, no. 2, pp. 989–1000, Jan. 2021.
 </p>
 
 <p class="publication">
-[6] S. Li, F. Hu, Z. Mao, Z. Ling, and Y. Zou, “Sum-Throughput Maximization by Power Allocation in WBAN With Relay Cooperation,” <i>IEEE Access</i>, vol. 7, pp. 124727–124736, Aug. 2019.
+[6] S. Li, F. Hu, Z. Mao,
+Z. Ling, and Y. Zou,
+“Sum-Throughput Maximization by Power Allocation in WBAN
+With Relay Cooperation,”
+<i>IEEE Access</i>,
+vol. 7, pp. 124727–124736, Aug. 2019.
 </p>
 
 </body>
 </html>
+```
